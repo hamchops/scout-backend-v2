@@ -9,16 +9,6 @@ const GetSkateparks = async (req, res) => {
     }
 }
 
-// const GetSkateparksLocation = async (req, res) => {
-//     try {
-//         const locations = await Skateparks.findAll()
-//         res.send(locations)
-//     } catch (error) {
-//         throw error
-//     }
-// }
-
-
 module.exports = {
     GetSkateparks,
     // GetSkateparksLocation

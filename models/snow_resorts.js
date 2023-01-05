@@ -22,7 +22,7 @@ module.exports = (sequelize, DataTypes) => {
     name: DataTypes.STRING,
     address: DataTypes.STRING,
     chairlift: DataTypes.STRING,
-    lodging: DataTypes.STRING
+    lodging: DataTypes.STRING,
     category_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
@@ -36,7 +36,7 @@ module.exports = (sequelize, DataTypes) => {
 }, {
     sequelize,
     modelName: 'Snow_Resorts',
-    tableName: 'snow resorts'
+    tableName: 'snow_resorts'
   });
   return Snow_Resorts;
 };

@@ -22,21 +22,21 @@ module.exports = (sequelize, DataTypes) => {
     name: DataTypes.STRING,
     address: DataTypes.STRING,
     divided_by_size: DataTypes.STRING,
-    trails_nearby: DataTypes.STRING
+    trails_nearby: DataTypes.STRING,
     category_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
-      field: 'places_id'
+      field: 'places_id',
       onDelete: 'CASCADE',
       references: {
-        model: 'places'
+        model: 'places',
         key: 'id'
       }
     }
   }, {
     sequelize,
     modelName: 'Dog_Parks',
-    tableName: 'dog parks',
+    tableName: 'dog_parks',
   });
   return Dog_Parks;
 };
