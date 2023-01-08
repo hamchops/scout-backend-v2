@@ -3,7 +3,7 @@ const { Places, Snow_Resorts, Dog_parks } = require('../models')
 const GetPlaces = async (req, res) => {
     try {
         const places = await Places.findAll()
-        res.send(categories)
+        res.send(places)
     } catch (error) {
         throw error
     }

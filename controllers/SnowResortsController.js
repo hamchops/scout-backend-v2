@@ -1,4 +1,4 @@
-const { Snow_Resorts } = require(../models)
+const { Snow_Resorts } = require('../models')
 
 const GetSnowResorts = async (req, res) => {
     try{
